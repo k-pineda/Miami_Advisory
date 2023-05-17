@@ -1,0 +1,9 @@
+body {
+    background-image: url(./img/codioful-formerly-gradienta-O10vBIDRkZw-unsplash.jpg);
+    color: white;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
