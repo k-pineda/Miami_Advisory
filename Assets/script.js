@@ -4,6 +4,11 @@ $("#current-time").text(currentTime)
 
 var currentWeatherAPI=`https://api.openweathermap.org/data/2.5/weather?id=4164138&appid=3484e08d51e803d19133758ad6e77ac5&units=imperial`
 
+var currentFeelsLikeTemp;
+var cityName;
+var currentWeather;
+
+
 function getWeatherAPI (currentWeatherAPI){
     fetch(currentWeatherAPI)
         .then(function (response) 
