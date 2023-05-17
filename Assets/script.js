@@ -28,7 +28,7 @@ function getWeatherAPI (currentWeatherAPI){
         })
     }
     
-function getWeatherIcon() 
+function getWeatherIconAPI() 
 {
     // $('img').remove()
     var currentWeatherIcon=data.weather[0].icon
