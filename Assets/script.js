@@ -7,6 +7,11 @@ var currentWeatherAPI=`https://api.openweathermap.org/data/2.5/weather?id=416413
 var currentFeelsLikeTemp;
 var cityName;
 var currentWeather;
+var currentWeatherIcon;
+
+// when current feel is greater than 90 move progress bar to 😰🐕☠️
+// when current feel is greater than 105 move progress bar to 🥵🐕⚱️ 
+// when current feel is less than 90 move progress bar to 🙂🐕✅ 
 
 
 function getWeatherAPI (currentWeatherAPI){
@@ -19,12 +24,19 @@ function getWeatherAPI (currentWeatherAPI){
             console.log(data)
             console.log(data.main.feels_like)
             console.log(data.name)
-            console.log(data.weather[0])
+            console.log(data.weather[0].icon)
         })
     }
- 
-getWeatherAPI(currentWeatherAPI)
+    
+function getWeatherIcon() 
+{
+    // $('img').remove()
+    var currentWeatherIcon=data.weather[0].icon
+    var img = $('<img>', {src:`https://openweathermap.org/img/wn/${currentWeatherIcon}@2x.png`})
+    return img
+}
 
+getWeatherAPI(currentWeatherAPI)
 
 
 //   function pageLoad()
