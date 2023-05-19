@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +18,73 @@
 </head>
 
 <body>
-    <header class="bg-dark p-4 ">
-        <h1>Miami</h1>
-        <h3 id="current-time" class="position-absolute top-0 end-0"></h3>
-    </header>
+    <section class="hero is-dark ">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <header class="navbar">
+            <div class="container">
+              
+              
+            </div>
+          </header>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title">
+              Miami
+            </p>
+            <p class="subtitle">
+              Pet Heat Index
+            </p>
+          </div>
+        </div>
+      
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+              <ul>
+                <li class="is-active"><a>Overview</a></li>
+                <li><a>Modifiers</a></li>
+                <li><a>Grid</a></li>
+                <li><a>Elements</a></li>
+                <li><a>Components</a></li>
+                <li><a>Layout</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
 
 
     <main>
-        <div class=>
-            <div class="progress offset-3 col-4 " role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-                aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+        <aside class="text-white d-flex justify-content-between">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/img/hotdog.jpg" class="card-img-top" alt="Two dog friends">
+                <div class="card-body">
+                  <h5 class="card-title">Dog Overheated?</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-danger">Go somewhere</a>
+                </div>
+              </div>
+              
+        </aside>
+
+
+        <div class='d-flex '>
+            <div class="progress  offset-4 col-4" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="height: 40px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 25%">🙂🐕</div>
             </div>
+
+            
+
+
+
+
+
             <div class="col" id="feels-like-temp"></div>
             <p id="not-safe" class="color-danger"></p>
             <p id="safe" class="=color-success"></p>

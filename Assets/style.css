@@ -1,14 +1,30 @@
 body {
     background-image: url(./img/codioful-formerly-gradienta-O10vBIDRkZw-unsplash.jpg);
-    color: rgb(255, 87, 115);
+    
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
     
 }
-h1{
+.title{
+  color: rgb(255, 87, 115)!important;
+
     font-family: 'Mr Dafoe', cursive;    
     text-align: center;
     font-size: 100px;
 }
+.progress{
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 50px;
+  
+}
+.active{
+  margin-top: -60px;
+  background-color: rgb(255, 87, 115)!important;
+}
+.hero{
+  height: 400px !important;
+}
+
