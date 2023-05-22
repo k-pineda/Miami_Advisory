@@ -11,6 +11,30 @@ body {
   background-size: cover;
     
 }
+.hero:before {
+  content: url("./img/palmtree3.png");
+  display: block;
+  position: absolute;
+  top: -65px;
+  left: -15px;
+  height: auto;
+  width: 200px;
+  -webkit-transform: rotate(338deg);
+          transform: rotate(338deg);
+}
+
+.hero:after {
+  content: url("./img/hibiscusflower2.png");
+  display: block;
+  z-index: 1;
+  height: auto;
+  width: 17px;
+  position: absolute;
+  right: -106px;
+  bottom: -15px;
+  transform: rotate(115deg);
+}
+
 .title{
   color: rgb(255, 87, 115)!important;
 
