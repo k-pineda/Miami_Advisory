@@ -48,15 +48,15 @@ function getWeatherAPI(currentWeatherAPI) {
             })
 }
 
-function getWeatherAPI(requestURL) {
-    fetch(requestURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data)
-            })
-}
+// function getWeatherAPI(requestURL) {
+//     fetch(requestURL)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (data) {
+//             console.log(data)
+//             })
+// }
 
 function getWeatherIconAPI() {
     // $('img').remove()
@@ -65,11 +65,11 @@ function getWeatherIconAPI() {
     return img
 }
 
-// getWeatherAPI(currentWeatherAPI)
+getWeatherAPI(currentWeatherAPI)
 
 // getWeatherAPI(weatherNWSAPI)
 
-getWeatherAPI(forecastNWSAPI)
+// getWeatherAPI(forecastNWSAPI)
 
 //   function pageLoad()
 // {
