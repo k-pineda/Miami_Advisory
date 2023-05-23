@@ -4,6 +4,14 @@ $("#current-time").text(currentTime)
 
 var currentWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?id=4164138&appid=3484e08d51e803d19133758ad6e77ac5&units=imperial`
 
+var weatherNWSAPI=`https://api.weather.gov/points/25.774269,-80.193657`
+
+var stationNWSAPI="https://api.weather.gov/gridpoints/MFL/110,51/stations"
+
+var forecastNWSAPI=`https://api.weather.gov/gridpoints/MFL/110,51/forecast`
+
+
+
 var currentFeelsLikeTemp;
 var cityName;
 var currentWeather;
@@ -40,6 +48,16 @@ function getWeatherAPI(currentWeatherAPI) {
             })
 }
 
+function getWeatherAPI(requestURL) {
+    fetch(requestURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data)
+            })
+}
+
 function getWeatherIconAPI() {
     // $('img').remove()
     var currentWeatherIcon = data.weather[0].icon
@@ -47,8 +65,11 @@ function getWeatherIconAPI() {
     return img
 }
 
-getWeatherAPI(currentWeatherAPI)
+// getWeatherAPI(currentWeatherAPI)
 
+// getWeatherAPI(weatherNWSAPI)
+
+getWeatherAPI(forecastNWSAPI)
 
 //   function pageLoad()
 // {
