@@ -72,3 +72,16 @@ body {
 .hide {
   display: none;
 }
+
+@media (min-width: 900px) {
+  header:before {
+    width: 275px;
+    top: -140px;
+  }
+}
+
+@media (min-width: 1100px) {
+  header:after {
+    width: 280px;
+  }
+}
