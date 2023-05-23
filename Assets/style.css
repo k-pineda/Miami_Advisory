@@ -1,65 +1,74 @@
-html{
+html {
   background: none;
+  height: 100%;
 }
 
-body {
-    background-image: url(./img/codioful-formerly-gradienta-O10vBIDRkZw-unsplash.jpg);
-    
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    
-}
 .hero:before {
   content: url("./img/palmtree3.png");
   display: block;
-  position: absolute;
+  position: fixed;
   top: -65px;
   left: -15px;
   height: auto;
   width: 200px;
   -webkit-transform: rotate(338deg);
-          transform: rotate(338deg);
+  transform: rotate(338deg);
 }
 
-.hero:after {
+/* .hero:after {
   content: url("./img/hibiscusflower2.png");
   display: block;
   z-index: 1;
   height: auto;
   width: 17px;
-  position: absolute;
+  position: fixed;
   right: -106px;
   bottom: -15px;
   transform: rotate(115deg);
+} */
+
+body {
+  background-image: url(./img/codioful-formerly-gradienta-O10vBIDRkZw-unsplash.jpg);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
-.title{
-  color: rgb(255, 87, 115)!important;
 
-    font-family: 'Mr Dafoe', cursive;    
-    text-align: center;
-    font-size: 100px;
+
+.title {
+  color: rgb(255, 87, 115) !important;
+
+  font-family: 'Mr Dafoe', cursive;
+  text-align: center;
+  font-size: 100px;
 }
-.progress{
+
+.progress {
   font-size: 30px;
   font-weight: bolder;
   border-radius: 50px;
-  margin-top: 300px;
+  /* margin-top: 300px; */
 }
-.active{
+
+.active {
   margin-top: -60px;
-  background-color: rgb(255, 87, 115)!important;
+  background-color: rgb(255, 87, 115) !important;
 }
-.subtitle{
-  color: rgb(255, 87, 115)!important;
-  
+
+.subtitle {
+  color: rgb(255, 87, 115) !important;
+
 }
-.container{
-  color: rgb(255, 87, 115)!important;
+
+.container {
+  color: rgb(255, 87, 115) !important;
   font-weight: bolder;
 }
-.hide{
+
+.hide {
   display: none;
 }
