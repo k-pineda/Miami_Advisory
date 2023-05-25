@@ -15,7 +15,7 @@ html {
   transform: rotate(338deg);
 }
 
-.hero::after {
+.hero:after {
   content: url("./img/palmtree3_inverse.png");
   display: block;
   position: fixed;
@@ -85,7 +85,6 @@ body {
 }
 .card{
     float: right;
-    margin-top: 100px;
   }
   
   .card:hover{
