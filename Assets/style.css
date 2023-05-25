@@ -50,7 +50,6 @@ body {
 }
 
 
-
 .title {
   color: rgb(255, 87, 115) !important;
 
@@ -116,11 +115,11 @@ body {
     width: 280px;
   }
 }
+.card{
+  float: right;
+  margin-top: 100px;
+}
 
-@media (min-width: 1200px) {
-  .hero:before,
-  .hero::after {
-    width: 330px;
-    bottom: -220px;
-  }
-} */
+.card:hover{
+  opacity: 100 !important;
+}
