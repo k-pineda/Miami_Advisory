@@ -83,6 +83,14 @@ body {
 .hide {
   display: none;
 }
+.card{
+    float: right;
+    margin-top: 100px;
+  }
+  
+  .card:hover{
+    opacity: 100 !important;
+  }
 /* 
 @media (min-width: 900px) {
   .hero:before,
@@ -114,12 +122,4 @@ body {
   .hero::after {
     width: 280px;
   }
-}
-.card{
-  float: right;
-  margin-top: 100px;
-}
-
-.card:hover{
-  opacity: 100 !important;
 }
