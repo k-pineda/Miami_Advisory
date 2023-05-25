@@ -38,7 +38,6 @@ body {
 }
 
 
-
 .title {
   color: rgb(255, 87, 115) !important;
 
@@ -84,4 +83,12 @@ body {
   header:after {
     width: 280px;
   }
+}
+.card{
+  float: right;
+  margin-top: 100px;
+}
+
+.card:hover{
+  opacity: 100 !important;
 }
