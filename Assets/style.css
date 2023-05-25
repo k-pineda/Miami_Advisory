@@ -15,6 +15,18 @@ html {
   transform: rotate(338deg);
 }
 
+.hero:after {
+  content: url("./img/palmtree3_inverse.png");
+  display: block;
+  position: fixed;
+  top: -119px;
+  right: 113px;
+  height: auto;
+  width: 200px;
+  -webkit-transform: rotate(17deg);
+  transform: rotate(17deg);
+}
+
 /* .hero:after {
   content: url("./img/hibiscusflower2.png");
   display: block;
